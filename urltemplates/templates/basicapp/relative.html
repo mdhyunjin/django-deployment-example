@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html' %}
+  {% block body_block %}
+    <h1>This is a Relative URL Page</h1>
+    <ul>
+      <li><a href="{% url 'basicapp:other' %}">the Other Page</a></li>
+      <li><a href="{% url 'index' %}">Index Page</a></li>
+    </ul>
+  {% endblock %}

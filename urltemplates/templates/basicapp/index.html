@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html' %}
+{% load my_extras %}
+  {% block body_block %}
+  <div class="jumbotron">
+    <h1>Welcome to Home Index Page</h1>
+    <p>{{ text }}</p>
+    <h2>word count: {{ text|word_count }}</h2>
+    <h2>{{ number|add:"202" }}</h2>
+  </div>
+  {% endblock %}
